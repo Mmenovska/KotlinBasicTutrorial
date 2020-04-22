@@ -17,6 +17,7 @@ class RecycleViewActivity:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycleview)
 
+
         var activitiesAdapter = ActivitiesAdapter (listActivities)
         recycle_view_activities.adapter = activitiesAdapter
     }
