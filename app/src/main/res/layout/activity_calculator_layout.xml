@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_view_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:text="Calc"
+        android:textColor="#fff"
+        style="@style/TextAppearance.AppCompat.Medium"/>
+
+    <EditText
+        android:id="@+id/edit_text_number_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_calc"
+        android:layout_margin="20dp"
+        android:inputType="number"
+        android:hint="Number 1"/>
+    <EditText
+        android:id="@+id/edit_text_number_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_number_one"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="number"
+        android:hint="Number 2"/>
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/edit_text_number_two"
+        android:layout_marginTop="20dp"
+        android:text="Add"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/button_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_number_two"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:text="Sub"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/button_mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_add"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Mul"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/button_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_sub"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:text = "Div"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/text_view_result_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textAllCaps="false"
+        android:layout_below="@+id/button_mul"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/text_view_result_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_result_label"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="0"/>
+
+</RelativeLayout>
