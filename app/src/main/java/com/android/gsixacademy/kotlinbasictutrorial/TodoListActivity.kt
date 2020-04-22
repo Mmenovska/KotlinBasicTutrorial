@@ -24,7 +24,6 @@ class TodoListActivity:AppCompatActivity() {
                     ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, todoList)
                 list_view_todo.adapter = arrayAdapter
                 edit_text_todo_value.setText("")
-                Toast.makeText(applicationContext, "test", Toast.LENGTH_SHORT).show()
             }
 
             }
