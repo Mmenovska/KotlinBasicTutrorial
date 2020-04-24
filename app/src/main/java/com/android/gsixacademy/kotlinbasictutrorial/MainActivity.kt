@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
             "RelativeLayoutActivity",
             "CalculatorActivity",
             "TodoListActivity",
-            "CalculatorSecondActivity"
+//            "CalculatorSecondActivity",
+        "RecycleViewActivity"
         )
 
 
@@ -44,6 +45,8 @@ class MainActivity : AppCompatActivity() {
                         CalculatorActivity::class.java
                     )
                 )
+
+                "RecycleViewActivity" -> startActivity(Intent(applicationContext, RecycleViewActivity :: class.java))
                 "TodoListActivity" -> startActivity(
                     Intent(applicationContext, TodoListActivity::class.java)
                 )

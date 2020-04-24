@@ -5,12 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_recycleview.*
 
 class RecycleViewActivity:AppCompatActivity() {
-    var listActivities: ArrayList<String> =
+    var listCars: ArrayList<String> =
         arrayListOf(
-            "RelativeLayoutActivity",
-            "CalculatorActivity",
-            "TodoListActivity",
-            "CalculatorSecondActivity"
+            "McLaren",
+            "Jaguar",
+            "Audi",
+            "Honda"
         )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +18,7 @@ class RecycleViewActivity:AppCompatActivity() {
         setContentView(R.layout.activity_recycleview)
 
 
-        var activitiesAdapter = ActivitiesAdapter (listActivities)
-        recycle_view_activities.adapter = activitiesAdapter
+        var carsAdpter = CarsAdapter (listCars)
+        recycle_view_activities.adapter = carsAdpter
     }
 }

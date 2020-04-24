@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.recycleview_list_item.view.*
 
-class ActivitiesAdapter (val items : ArrayList<String>) :RecyclerView.Adapter <RecyclerView.ViewHolder>() {
+class CarsAdapter (val items : ArrayList<String>) :RecyclerView.Adapter <RecyclerView.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
