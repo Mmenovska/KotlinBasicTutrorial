@@ -21,6 +21,10 @@ class RecycleViewActivity:AppCompatActivity() {
         listCars.add(Car("Mercedes", "Mercedes description", R.drawable.mercedes_amg))
         listCars.add(Car("Nissan", "Nissan description", R.drawable.nissan ))
 
+        for (i in 0..100){
+            listCars.add(Car("Nissan", "Nissan description"+i, R.drawable.nissan ))
+        }
+
 
 
         var carsAdpter = CarsAdapter (listCars)
