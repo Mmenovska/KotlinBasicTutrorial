@@ -47,12 +47,12 @@ class MainActivity : AppCompatActivity() {
                 "TodoListActivity" -> startActivity(
                     Intent(applicationContext, TodoListActivity::class.java)
                 )
-                "CalculatorSecondActivity" -> startActivity(
-                    Intent(
-                        applicationContext,
-                        CalculatorSecondActivity::class.java
-                    )
-                )
+//                "CalculatorSecondActivity" -> startActivity(
+//                    Intent(
+//                        applicationContext,
+//                        CalculatorSecondActivity::class.java
+//                    )
+//                )
             }
 
         }
