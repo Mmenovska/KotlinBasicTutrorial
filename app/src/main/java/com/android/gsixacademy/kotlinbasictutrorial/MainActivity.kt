@@ -1,10 +1,9 @@
 package com.android.gsixacademy.kotlinbasictutrorial
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,8 +15,8 @@ class MainActivity : AppCompatActivity() {
             "RelativeLayoutActivity",
             "CalculatorActivity",
             "TodoListActivity",
-//            "CalculatorSecondActivity",
-        "RecycleViewActivity"
+        "RecycleViewActivity",
+        "RealCalculatorActivity"
         )
 
 
@@ -45,17 +44,12 @@ class MainActivity : AppCompatActivity() {
                         CalculatorActivity::class.java
                     )
                 )
-
                 "RecycleViewActivity" -> startActivity(Intent(applicationContext, RecycleViewActivity :: class.java))
                 "TodoListActivity" -> startActivity(
                     Intent(applicationContext, TodoListActivity::class.java)
                 )
-//                "CalculatorSecondActivity" -> startActivity(
-//                    Intent(
-//                        applicationContext,
-//                        CalculatorSecondActivity::class.java
-//                    )
-//                )
+                "RealCalculatorActivity" -> startActivity(Intent(applicationContext, RealCalculatorActivity::class.java))
+
             }
 
         }
