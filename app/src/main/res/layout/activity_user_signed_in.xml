@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_one">
+
+    <TextView
+        android:id="@+id/text_view_android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_margin="16dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/text_view_signed_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signed in with "
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/text_view_android"
+        android:layout_marginTop="110dp"
+        android:textSize="25dp"/>
+    <Button
+        android:id="@+id/button_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_signed_in"
+        android:layout_margin="16dp"
+        android:background="#dda0dd"
+        android:text="Sign Out"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="18dp"/>
+
+
+
+</RelativeLayout>
