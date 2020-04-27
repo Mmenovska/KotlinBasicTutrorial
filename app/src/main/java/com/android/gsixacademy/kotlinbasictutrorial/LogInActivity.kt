@@ -17,15 +17,19 @@ class LogInActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
        var  mySharedPreferences = getSharedPreferences("KotlinBasicTutorialPreferences", Context.MODE_PRIVATE)
-        var myPreferencesEditor = mySharedPreferences!!.edit()
+
+
+        if (mySharedPreferences.contains("userName")){
+            startActivity(Intent (applicationContext, UserSignedInActivity :: class.java))
+        }
 
         button_sign_in.setOnClickListener {
            var userName = edit_text_user_name.text.toString()
             var userPass =edit_text_password.text.toString()
 
-            myPreferencesEditor?.putString("userName", userName)
-            myPreferencesEditor?.putString("password", userPass)
-            myPreferencesEditor.apply()
+            mySharedPreferences.edit().putString("userName", userName)
+            mySharedPreferences.edit().putString("password", userPass)
+            mySharedPreferences.edit().apply()
 
             startActivity(Intent (applicationContext, UserSignedInActivity :: class.java))
 
