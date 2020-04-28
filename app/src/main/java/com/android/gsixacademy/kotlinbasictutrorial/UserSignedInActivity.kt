@@ -19,7 +19,7 @@ class UserSignedInActivity:AppCompatActivity() {
         text_view_signed_in.text = "Signed in with $userName"
 
         button_sign_out.setOnClickListener {
-            mySharedPreferences.edit().remove("userName")
+            mySharedPreferences.edit().clear().apply()
             onBackPressed()
             Toast.makeText(applicationContext, "Succesfully signed out", Toast.LENGTH_SHORT).show()
 
