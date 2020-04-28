@@ -1,6 +1,7 @@
 package com.android.gsixacademy.kotlinbasictutrorial
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_recycleview.*
 
@@ -27,7 +28,12 @@ class RecycleViewActivity:AppCompatActivity() {
 
 
 
-        var carsAdpter = CarsAdapter (listCars)
+        var carsAdpter = CarsAdapter (listCars) {
+              if (it is CarsAdapterClickEvent.CarsAdapterItemClick){
+                  var carClicked = it.car
+                  Toast.makeText(applicationContext, carClicked.title, Toast.LENGTH_LONG).show()
+              }
+        }
         recycle_view_activities.adapter = carsAdpter
     }
 }
