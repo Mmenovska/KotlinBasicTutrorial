@@ -26,6 +26,7 @@
         <activity android:name=".RecycleViewActivity"/>
         <activity android:name=".LogInActivity"/>
         <activity android:name=".UserSignedInActivity"/>
+        <activity android:name=".movies.PopularMoviesActivity"/>
     </application>
 
 </manifest>

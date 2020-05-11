@@ -4,12 +4,12 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.android.gsixacademy.kotlinbasictutrorial.models.Car
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.recycleview_list_item.view.*
 
-class CarsAdapter (val items : ArrayList<Car>,val carsAdapterClickEvent: (CarsAdapterClickEvent) -> Unit) :RecyclerView.Adapter <RecyclerView.ViewHolder>() {
+class CarsAdapter (val items : ArrayList<Car>, val carsAdapterClickEvent: (CarsAdapterClickEvent) -> Unit) :RecyclerView.Adapter <RecyclerView.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
