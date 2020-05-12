@@ -26,11 +26,11 @@ class PopularPeopleActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     val popularPeople = response.body()
                     val popularPeopleList = popularPeople?.results
-                    if (popularPeople != null) {
-                        var moviesAdapter = MoviesAdapter(moviesList) {
+                    if (popularPeopleList != null) {
+                        var peopleAdapter = PeopleAdapter(popularPeopleList) {
 
                         }
-                        recycle_view_activities.adapter = moviesAdapter
+                        recycle_view_activities.adapter = peopleAdapter
 
                     }
                 }

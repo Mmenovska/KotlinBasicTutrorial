@@ -9,6 +9,7 @@ import android.provider.Contacts
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.android.gsixacademy.kotlinbasictutrorial.movies.PopularMoviesActivity
+import com.android.gsixacademy.kotlinbasictutrorial.people.PopularPeopleActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -24,7 +25,8 @@ class MainActivity : AppCompatActivity() {
         "RecycleViewActivity",
         "RealCalculatorActivity",
             "LogInActivity",
-            "PopularMoviesActivity"
+            "PopularMoviesActivity",
+            "PopularPeopleActivity"
         )
 
 
@@ -61,6 +63,7 @@ class MainActivity : AppCompatActivity() {
                 "RealCalculatorActivity" -> startActivity(Intent(applicationContext, RealCalculatorActivity::class.java))
                 "LogInActivity" -> startActivity(Intent(applicationContext, LogInActivity::class.java))
                 "PopularMoviesActivity" -> startActivity(Intent(applicationContext, PopularMoviesActivity::class.java))
+                "PopularPeopleActivity" -> startActivity(Intent(applicationContext, PopularPeopleActivity::class.java))
 
             }
 
