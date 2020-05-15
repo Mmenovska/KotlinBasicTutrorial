@@ -6,7 +6,7 @@ import com.android.gsixacademy.kotlinbasictutrorial.R
 import com.android.gsixacademy.kotlinbasictutrorial.api.ServiceBuilder
 import com.android.gsixacademy.kotlinbasictutrorial.api.TheMovieDbApi
 import com.android.gsixacademy.kotlinbasictutrorial.models.CompanyDetail
-import kotlinx.android.synthetic.main.activity_recycleview.*
+import kotlinx.android.synthetic.main.activity_company.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -15,11 +15,11 @@ import retrofit2.Response
 class CompanyActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recycleview)
+        setContentView(R.layout.activity_company)
 
 
         val request = ServiceBuilder.buildService(TheMovieDbApi::class.java)
-        val call = request.getCompanyDetails("8dd3a40cdacd660d79bce7c46bad942e")
+        val call = request.getCompanyDetails("8dd3a40cdacd660d79bce7c46bad942e", edit_text_search_company.text.toString().toInt())
         call.enqueue(object : Callback<CompanyDetail> {
             override fun onResponse(call: Call<CompanyDetail>, response: Response<CompanyDetail>) {
                 if (response.isSuccessful) {
@@ -28,7 +28,7 @@ class CompanyActivity : AppCompatActivity() {
                     if (companyList!=null){
                         var companyAdapter = CompanyAdapter(companyList){}
 
-                        recycle_view_activities.adapter = companyAdapter
+                        recycle_view_search_company.adapter = companyAdapter
                         }
 
                     }

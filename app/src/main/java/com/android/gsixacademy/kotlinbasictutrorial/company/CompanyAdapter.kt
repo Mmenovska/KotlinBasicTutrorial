@@ -39,6 +39,7 @@ inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         itemView.text_view_company_name.text = itemModel.name
         itemView.text_view_origin.text = itemModel.origin_country
         Picasso.get().load("https://image.tmdb.org/t/p/original/${itemModel.logo_path}").fit().into(itemView.image_view_company_logo)
+        itemView.text_view_id.text = itemModel.id.toString()
     }
 }
 

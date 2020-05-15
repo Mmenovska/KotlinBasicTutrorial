@@ -11,6 +11,8 @@ import android.widget.Toast
 import com.android.gsixacademy.kotlinbasictutrorial.company.CompanyActivity
 import com.android.gsixacademy.kotlinbasictutrorial.movies.PopularMoviesActivity
 import com.android.gsixacademy.kotlinbasictutrorial.people.PopularPeopleActivity
+import com.android.gsixacademy.kotlinbasictutrorial.search.SearchMoviesActivity
+import com.android.gsixacademy.kotlinbasictutrorial.search.SearchPeopleActivity
 import com.android.gsixacademy.kotlinbasictutrorial.tvshow.TvShowActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.*
@@ -30,7 +32,9 @@ class MainActivity : AppCompatActivity() {
             "PopularMoviesActivity",
             "PopularPeopleActivity",
             "CompanyActivity",
-            "TvShowActivity"
+            "TvShowActivity",
+            "SearchMoviesActivity",
+            "SearchPeopleActivity"
         )
 
 
@@ -70,6 +74,8 @@ class MainActivity : AppCompatActivity() {
                 "PopularPeopleActivity" -> startActivity(Intent(applicationContext, PopularPeopleActivity::class.java))
                 "CompanyActivity" -> startActivity(Intent(applicationContext, CompanyActivity::class.java))
                 "TvShowActivity" -> startActivity(Intent(applicationContext, TvShowActivity::class.java))
+                "SearchMoviesActivity" -> startActivity(Intent(applicationContext, SearchMoviesActivity::class.java))
+                "SearchPeopleActivity" -> startActivity(Intent (applicationContext, SearchPeopleActivity::class.java))
 
             }
 

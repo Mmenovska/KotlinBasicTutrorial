@@ -30,6 +30,8 @@
         <activity android:name=".people.PopularPeopleActivity"/>
         <activity android:name=".company.CompanyActivity"/>
         <activity android:name=".tvshow.TvShowActivity"/>
+        <activity android:name=".search.SearchMoviesActivity"/>
+        <activity android:name=".search.SearchPeopleActivity"/>
     </application>
 
 </manifest>

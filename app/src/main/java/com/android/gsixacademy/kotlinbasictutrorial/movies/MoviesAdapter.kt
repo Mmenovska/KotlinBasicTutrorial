@@ -39,7 +39,7 @@ class MoviesAdapter(
         fun bindData(itemModel: MovieResult, position: Int) {
             itemView.text_view_movie_title.text = itemModel.title
             itemView.text_view_movie_description.text = itemModel.overview
-            Picasso.get().load("https://image.tmdb.org/t/p/w500/${itemModel.poster_path}").fit().into(itemView.image_view_movie)
+            Picasso.get().load("https://image.tmdb.org/t/p/w500/${itemModel.poster_path}").fit().centerCrop().into(itemView.image_view_movie)
         }
     }
 
