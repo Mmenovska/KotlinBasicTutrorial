@@ -5,29 +5,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
-        android:id="@+id/image_view_profile"
+        android:id="@+id/image_view_company_logo"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
 
     <TextView
-        android:id="@+id/text_view_name"
+        android:id="@+id/text_view_company_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/image_view_profile"
+        app:layout_constraintTop_toBottomOf="@id/image_view_company_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"/>
     <TextView
-        android:id="@+id/text_view_popularity"
+        android:id="@+id/text_view_origin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_name"
+        app:layout_constraintTop_toBottomOf="@id/text_view_company_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

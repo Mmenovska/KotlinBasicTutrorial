@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/text_view_movie_title"
         android:layout_margin="16dp"
-        android:textStyle="italic"/>
+        android:textStyle="italic"
+        android:maxLines="5"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

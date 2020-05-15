@@ -8,8 +8,10 @@ import android.os.Bundle
 import android.provider.Contacts
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import com.android.gsixacademy.kotlinbasictutrorial.company.CompanyActivity
 import com.android.gsixacademy.kotlinbasictutrorial.movies.PopularMoviesActivity
 import com.android.gsixacademy.kotlinbasictutrorial.people.PopularPeopleActivity
+import com.android.gsixacademy.kotlinbasictutrorial.tvshow.TvShowActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -26,7 +28,9 @@ class MainActivity : AppCompatActivity() {
         "RealCalculatorActivity",
             "LogInActivity",
             "PopularMoviesActivity",
-            "PopularPeopleActivity"
+            "PopularPeopleActivity",
+            "CompanyActivity",
+            "TvShowActivity"
         )
 
 
@@ -64,6 +68,8 @@ class MainActivity : AppCompatActivity() {
                 "LogInActivity" -> startActivity(Intent(applicationContext, LogInActivity::class.java))
                 "PopularMoviesActivity" -> startActivity(Intent(applicationContext, PopularMoviesActivity::class.java))
                 "PopularPeopleActivity" -> startActivity(Intent(applicationContext, PopularPeopleActivity::class.java))
+                "CompanyActivity" -> startActivity(Intent(applicationContext, CompanyActivity::class.java))
+                "TvShowActivity" -> startActivity(Intent(applicationContext, TvShowActivity::class.java))
 
             }
 

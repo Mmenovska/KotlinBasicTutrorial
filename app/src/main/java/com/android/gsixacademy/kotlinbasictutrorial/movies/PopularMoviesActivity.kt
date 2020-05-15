@@ -1,13 +1,10 @@
 package com.android.gsixacademy.kotlinbasictutrorial.movies
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.android.gsixacademy.kotlinbasictutrorial.CarsAdapter
-import com.android.gsixacademy.kotlinbasictutrorial.CarsAdapterClickEvent
+
 import com.android.gsixacademy.kotlinbasictutrorial.R
 import com.android.gsixacademy.kotlinbasictutrorial.api.ServiceBuilder
 import com.android.gsixacademy.kotlinbasictutrorial.api.TheMovieDbApi
-import com.android.gsixacademy.kotlinbasictutrorial.models.MovieResult
 import com.android.gsixacademy.kotlinbasictutrorial.models.PopularMovies
 import kotlinx.android.synthetic.main.activity_recycleview.*
 import retrofit2.Call
